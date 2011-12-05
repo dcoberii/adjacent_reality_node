@@ -1,0 +1,10 @@
+
+Copy 99-dfu_programmer.rules to /etc/udev/rules.d to use with non-root users
+
+Status:
+  avr_src/fusion_raw.c 			incomplete and untested (hardware unavailable)
+  avr_src/twi.*				complete, may add features later
+  avr_src/l3g4200d.* lsm3003dlm.*	simple but complete, may add features later
+  avr_src/usb_hid.*			grotty but barely functional, will be replaced (priority)
+  avr_src/Makefile			got a little overzealous with the dependencies
+
