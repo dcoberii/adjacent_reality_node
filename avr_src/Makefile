@@ -3,7 +3,8 @@ MCU = atmega32u4
 
 TARGET = fusion_raw
 SRC =	$(TARGET).c \
-		usb_hid.c \
+		usb_core.c \
+		usb_serial.c \
 		twi.c \
 		l3g4200d.c \
 		lsm303dlm.c
