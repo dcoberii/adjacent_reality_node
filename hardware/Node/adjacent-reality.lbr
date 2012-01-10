@@ -905,6 +905,8 @@ Package used by L3G4200D 3-axis gyro&lt;br&gt;
 <pin name="D+O" x="12.7" y="2.54" length="middle" rot="R180"/>
 <pin name="VCC" x="12.7" y="0" length="middle" rot="R180"/>
 <pin name="D-O" x="12.7" y="-2.54" length="middle" rot="R180"/>
+<text x="-7.62" y="5.588" size="1.778" layer="95">&gt;Name</text>
+<text x="-7.874" y="-7.366" size="1.778" layer="96">&gt;Value</text>
 </symbol>
 <symbol name="SWITCH-MOMENTARY">
 <wire x1="1.905" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
@@ -1317,10 +1319,10 @@ It includes a sensing element and an IC interface capable of providing the measu
 <devices>
 <device name="" package="SOT-666">
 <connects>
-<connect gate="G$1" pin="D+I" pad="1"/>
-<connect gate="G$1" pin="D+O" pad="6"/>
-<connect gate="G$1" pin="D-I" pad="3"/>
-<connect gate="G$1" pin="D-O" pad="4"/>
+<connect gate="G$1" pin="D+I" pad="3"/>
+<connect gate="G$1" pin="D+O" pad="4"/>
+<connect gate="G$1" pin="D-I" pad="1"/>
+<connect gate="G$1" pin="D-O" pad="6"/>
 <connect gate="G$1" pin="GND" pad="2"/>
 <connect gate="G$1" pin="VCC" pad="5"/>
 </connects>
