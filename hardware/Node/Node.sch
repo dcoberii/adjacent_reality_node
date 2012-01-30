@@ -391,34 +391,34 @@ Package used by L3G4200D 3-axis gyro&lt;br&gt;
 <circle x="-1.4" y="1.4" radius="0.1" width="0.2" layer="21"/>
 <circle x="1" y="1" radius="0.3" width="0.127" layer="51"/>
 <circle x="1" y="1" radius="0.05" width="0.2" layer="51"/>
-<smd name="2" x="-2.3" y="1.1" dx="0.7" dy="0.4" layer="1" rot="R180"/>
-<smd name="3" x="-2.3" y="0.55" dx="0.7" dy="0.4" layer="1"/>
-<smd name="4" x="-2.3" y="0" dx="0.7" dy="0.4" layer="1"/>
-<smd name="5" x="-2.3" y="-0.55" dx="0.7" dy="0.4" layer="1"/>
-<smd name="1" x="-2.3" y="1.65" dx="0.7" dy="0.4" layer="1"/>
-<smd name="6" x="-2.3" y="-1.1" dx="0.7" dy="0.4" layer="1"/>
-<smd name="7" x="-2.3" y="-1.65" dx="0.7" dy="0.4" layer="1"/>
-<smd name="9" x="-1.1" y="-2.3" dx="0.7" dy="0.4" layer="1" rot="R270"/>
-<smd name="10" x="-0.55" y="-2.3" dx="0.7" dy="0.4" layer="1" rot="R90"/>
-<smd name="11" x="0" y="-2.3" dx="0.7" dy="0.4" layer="1" rot="R90"/>
-<smd name="12" x="0.55" y="-2.3" dx="0.7" dy="0.4" layer="1" rot="R90"/>
-<smd name="8" x="-1.65" y="-2.3" dx="0.7" dy="0.4" layer="1" rot="R90"/>
-<smd name="13" x="1.1" y="-2.3" dx="0.7" dy="0.4" layer="1" rot="R90"/>
-<smd name="14" x="1.65" y="-2.3" dx="0.7" dy="0.4" layer="1" rot="R90"/>
-<smd name="16" x="2.3" y="-1.1" dx="0.7" dy="0.4" layer="1"/>
-<smd name="17" x="2.3" y="-0.55" dx="0.7" dy="0.4" layer="1" rot="R180"/>
-<smd name="18" x="2.3" y="0" dx="0.7" dy="0.4" layer="1" rot="R180"/>
-<smd name="19" x="2.3" y="0.55" dx="0.7" dy="0.4" layer="1" rot="R180"/>
-<smd name="15" x="2.3" y="-1.65" dx="0.7" dy="0.4" layer="1" rot="R180"/>
-<smd name="20" x="2.3" y="1.1" dx="0.7" dy="0.4" layer="1" rot="R180"/>
-<smd name="21" x="2.3" y="1.65" dx="0.7" dy="0.4" layer="1" rot="R180"/>
-<smd name="23" x="1.1" y="2.3" dx="0.7" dy="0.4" layer="1" rot="R90"/>
-<smd name="24" x="0.55" y="2.3" dx="0.7" dy="0.4" layer="1" rot="R270"/>
-<smd name="25" x="0" y="2.3" dx="0.7" dy="0.4" layer="1" rot="R270"/>
-<smd name="26" x="-0.55" y="2.3" dx="0.7" dy="0.4" layer="1" rot="R270"/>
-<smd name="22" x="1.65" y="2.3" dx="0.7" dy="0.4" layer="1" rot="R270"/>
-<smd name="27" x="-1.1" y="2.3" dx="0.7" dy="0.4" layer="1" rot="R270"/>
-<smd name="28" x="-1.65" y="2.3" dx="0.7" dy="0.4" layer="1" rot="R270"/>
+<smd name="2" x="-2.3" y="1.1" dx="0.7" dy="0.381" layer="1" rot="R180"/>
+<smd name="3" x="-2.3" y="0.55" dx="0.7" dy="0.381" layer="1"/>
+<smd name="4" x="-2.3" y="0" dx="0.7" dy="0.381" layer="1"/>
+<smd name="5" x="-2.3" y="-0.55" dx="0.7" dy="0.381" layer="1"/>
+<smd name="1" x="-2.3" y="1.65" dx="0.7" dy="0.381" layer="1"/>
+<smd name="6" x="-2.3" y="-1.1" dx="0.7" dy="0.381" layer="1"/>
+<smd name="7" x="-2.3" y="-1.65" dx="0.7" dy="0.381" layer="1"/>
+<smd name="9" x="-1.1" y="-2.3" dx="0.7" dy="0.381" layer="1" rot="R270"/>
+<smd name="10" x="-0.55" y="-2.3" dx="0.7" dy="0.381" layer="1" rot="R90"/>
+<smd name="11" x="0" y="-2.3" dx="0.7" dy="0.381" layer="1" rot="R90"/>
+<smd name="12" x="0.55" y="-2.3" dx="0.7" dy="0.381" layer="1" rot="R90"/>
+<smd name="8" x="-1.65" y="-2.3" dx="0.7" dy="0.381" layer="1" rot="R90"/>
+<smd name="13" x="1.1" y="-2.3" dx="0.7" dy="0.381" layer="1" rot="R90"/>
+<smd name="14" x="1.65" y="-2.3" dx="0.7" dy="0.381" layer="1" rot="R90"/>
+<smd name="16" x="2.3" y="-1.1" dx="0.7" dy="0.381" layer="1"/>
+<smd name="17" x="2.3" y="-0.55" dx="0.7" dy="0.381" layer="1" rot="R180"/>
+<smd name="18" x="2.3" y="0" dx="0.7" dy="0.381" layer="1" rot="R180"/>
+<smd name="19" x="2.3" y="0.55" dx="0.7" dy="0.381" layer="1" rot="R180"/>
+<smd name="15" x="2.3" y="-1.65" dx="0.7" dy="0.381" layer="1" rot="R180"/>
+<smd name="20" x="2.3" y="1.1" dx="0.7" dy="0.381" layer="1" rot="R180"/>
+<smd name="21" x="2.3" y="1.65" dx="0.7" dy="0.381" layer="1" rot="R180"/>
+<smd name="23" x="1.1" y="2.3" dx="0.7" dy="0.381" layer="1" rot="R90"/>
+<smd name="24" x="0.55" y="2.3" dx="0.7" dy="0.381" layer="1" rot="R270"/>
+<smd name="25" x="0" y="2.3" dx="0.7" dy="0.381" layer="1" rot="R270"/>
+<smd name="26" x="-0.55" y="2.3" dx="0.7" dy="0.381" layer="1" rot="R270"/>
+<smd name="22" x="1.65" y="2.3" dx="0.7" dy="0.381" layer="1" rot="R270"/>
+<smd name="27" x="-1.1" y="2.3" dx="0.7" dy="0.381" layer="1" rot="R270"/>
+<smd name="28" x="-1.65" y="2.3" dx="0.7" dy="0.381" layer="1" rot="R270"/>
 <text x="-1.5" y="-0.1" size="0.5" layer="51">Y</text>
 <text x="0.1" y="-1.7" size="0.5" layer="51">X</text>
 <text x="0" y="1" size="0.5" layer="51">Z</text>
@@ -948,8 +948,6 @@ Package used by L3G4200D 3-axis gyro&lt;br&gt;
 <pin name="D+O" x="12.7" y="2.54" length="middle" rot="R180"/>
 <pin name="VCC" x="12.7" y="0" length="middle" rot="R180"/>
 <pin name="D-O" x="12.7" y="-2.54" length="middle" rot="R180"/>
-<text x="-7.62" y="5.588" size="1.778" layer="95">&gt;Name</text>
-<text x="-7.874" y="-7.366" size="1.778" layer="96">&gt;Value</text>
 </symbol>
 <symbol name="MOSFET-N">
 <wire x1="0.762" y1="0.762" x2="0.762" y2="0" width="0.254" layer="94"/>
@@ -1311,10 +1309,10 @@ Package used by L3G4200D 3-axis gyro&lt;br&gt;
 <devices>
 <device name="" package="SOT-666">
 <connects>
-<connect gate="G$1" pin="D+I" pad="3"/>
-<connect gate="G$1" pin="D+O" pad="4"/>
-<connect gate="G$1" pin="D-I" pad="1"/>
-<connect gate="G$1" pin="D-O" pad="6"/>
+<connect gate="G$1" pin="D+I" pad="1"/>
+<connect gate="G$1" pin="D+O" pad="6"/>
+<connect gate="G$1" pin="D-I" pad="3"/>
+<connect gate="G$1" pin="D-O" pad="4"/>
 <connect gate="G$1" pin="GND" pad="2"/>
 <connect gate="G$1" pin="VCC" pad="5"/>
 </connects>
@@ -6848,19 +6846,14 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="Q1" gate="G$1" pin="G"/>
 </segment>
 </net>
-<net name="N$23" class="0">
-<segment>
-<pinref part="R8" gate="G$1" pin="2"/>
-<pinref part="U1" gate="G$1" pin="D+"/>
-<wire x1="78.74" y1="101.6" x2="104.14" y2="101.6" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$24" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="D-"/>
 <pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="104.14" y1="99.06" x2="78.74" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="99.06" x2="78.74" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="99.06" x2="96.52" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="99.06" x2="99.06" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="D+"/>
+<wire x1="99.06" y1="101.6" x2="104.14" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$25" class="0">
@@ -6884,9 +6877,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="22.86" y="182.88" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="38.1" y1="96.52" x2="30.48" y2="96.52" width="0.1524" layer="91"/>
-<label x="27.94" y="96.52" size="1.778" layer="95"/>
-<pinref part="U9" gate="G$1" pin="D-I"/>
+<pinref part="U9" gate="G$1" pin="D+I"/>
+<wire x1="38.1" y1="101.6" x2="30.48" y2="101.6" width="0.1524" layer="91"/>
+<label x="30.48" y="101.6" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="D+" class="0">
@@ -6896,9 +6889,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="22.86" y="180.34" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="38.1" y1="101.6" x2="30.48" y2="101.6" width="0.1524" layer="91"/>
-<label x="27.94" y="101.6" size="1.778" layer="95"/>
-<pinref part="U9" gate="G$1" pin="D+I"/>
+<pinref part="U9" gate="G$1" pin="D-I"/>
+<wire x1="38.1" y1="96.52" x2="30.48" y2="96.52" width="0.1524" layer="91"/>
+<label x="30.48" y="96.52" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="RBT" class="0">
@@ -7236,6 +7229,15 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="152.4" y1="128.27" x2="170.18" y2="128.27" width="0.1524" layer="91"/>
 <pinref part="J2" gate="G$1" pin="6"/>
 <wire x1="170.18" y1="128.27" x2="170.18" y2="129.54" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="R8" gate="G$1" pin="2"/>
+<wire x1="78.74" y1="101.6" x2="96.52" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="101.6" x2="99.06" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="D-"/>
+<wire x1="99.06" y1="99.06" x2="104.14" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
