@@ -22,8 +22,8 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -75,7 +75,7 @@
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
 <layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="yes"/>
-<layer number="125" name="_tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
@@ -126,6 +126,55 @@
 <rectangle x1="6.985" y1="34.29" x2="15.875" y2="49.53" layer="41"/>
 <rectangle x1="6.985" y1="34.29" x2="15.875" y2="49.53" layer="40"/>
 <rectangle x1="6.985" y1="34.29" x2="15.875" y2="49.53" layer="42"/>
+<text x="18.415" y="35.8775" size="1.27" layer="21" font="vector" rot="R90">VBUS</text>
+<text x="20.955" y="35.8775" size="1.27" layer="21" font="vector" rot="R90">3V3</text>
+<text x="23.495" y="35.8775" size="1.27" layer="21" font="vector" rot="R90">VIN</text>
+<text x="26.035" y="35.8775" size="1.27" layer="21" rot="R90">RXI</text>
+<text x="28.575" y="35.8775" size="1.27" layer="21" font="vector" rot="R90">TXO</text>
+<text x="31.115" y="35.8775" size="1.27" layer="21" font="vector" rot="R90">GND</text>
+<text x="48.895" y="29.845" size="1.27" layer="21" font="vector" rot="R90">GND</text>
+<text x="46.355" y="29.845" size="1.27" layer="21" font="vector" rot="R90">3V3</text>
+<text x="44.45" y="19.685" size="1.27" layer="21" font="vector" rot="R90">F7</text>
+<text x="42.545" y="19.685" size="1.27" layer="21" font="vector" rot="R90">F6</text>
+<text x="44.45" y="22.225" size="1.27" layer="21" font="vector" rot="R90">F5</text>
+<text x="42.545" y="22.225" size="1.27" layer="21" font="vector" rot="R90">F4</text>
+<text x="44.45" y="24.765" size="1.27" layer="21" font="vector" rot="R90">F1</text>
+<text x="42.545" y="24.765" size="1.27" layer="21" font="vector" rot="R90">F0</text>
+<text x="45.72" y="41.275" size="1.27" layer="21" font="vector">SW2</text>
+<text x="45.72" y="16.51" size="1.27" layer="21" font="vector">SW1</text>
+<text x="0.3175" y="41.275" size="1.27" layer="21" font="vector">RESET</text>
+<text x="1.905" y="16.51" size="1.27" layer="21" font="vector">HWB</text>
+<text x="10.795" y="4.445" size="1.27" layer="21" font="vector">POWER</text>
+<text x="18.0975" y="31.115" size="1.27" layer="21" font="vector">BT_R</text>
+<text x="6.6675" y="20.955" size="1.27" layer="21" font="vector" rot="R90">AVR ISP</text>
+<wire x1="31.75" y1="25.4" x2="31.75" y2="20.32" width="0.254" layer="21"/>
+<wire x1="31.75" y1="25.4" x2="30.48" y2="24.13" width="0.254" layer="21"/>
+<wire x1="31.75" y1="25.4" x2="33.02" y2="24.13" width="0.254" layer="21"/>
+<wire x1="33.02" y1="19.05" x2="38.1" y2="19.05" width="0.254" layer="21"/>
+<wire x1="38.1" y1="19.05" x2="36.83" y2="20.32" width="0.254" layer="21"/>
+<wire x1="38.1" y1="19.05" x2="36.83" y2="17.78" width="0.254" layer="21"/>
+<circle x="36.83" y="24.13" radius="0.635" width="0.254" layer="21"/>
+<circle x="36.83" y="24.13" radius="0.127" width="0.254" layer="21"/>
+<text x="33.02" y="24.13" size="1.524" layer="21" font="vector">Y</text>
+<text x="38.1" y="19.05" size="1.524" layer="21" font="vector">X</text>
+<text x="38.1" y="24.13" size="1.524" layer="21" font="vector">Z</text>
+<text x="7.62" y="27.94" size="2.286" layer="21" font="vector">Adjacent</text>
+<text x="7.62" y="24.765" size="2.286" layer="21" font="vector">Reality</text>
+<text x="7.62" y="21.59" size="2.286" layer="21" font="vector">Node 0.1</text>
+<rectangle x1="10.16" y1="9.525" x2="40.64" y2="17.145" layer="22"/>
+<rectangle x1="10.16" y1="9.525" x2="17.78" y2="40.005" layer="22"/>
+<rectangle x1="33.02" y1="9.525" x2="40.64" y2="40.005" layer="22"/>
+<rectangle x1="10.16" y1="32.385" x2="40.64" y2="40.005" layer="22"/>
+<rectangle x1="17.78" y1="17.145" x2="21.59" y2="32.385" layer="22"/>
+<rectangle x1="21.59" y1="28.575" x2="33.02" y2="32.385" layer="22"/>
+<rectangle x1="21.59" y1="20.955" x2="25.4" y2="28.575" layer="22"/>
+<rectangle x1="25.4" y1="20.955" x2="29.21" y2="24.765" layer="22"/>
+<rectangle x1="29.21" y1="24.765" x2="33.02" y2="28.575" layer="22"/>
+<text x="41.91" y="45.72" size="1.524" layer="22" font="vector" rot="MR0">Adjacent Reality Node 0.1</text>
+<text x="41.91" y="43.18" size="1.524" layer="22" font="vector" rot="MR0">Donald Cober &amp; Nirav Patel</text>
+<text x="8.89" y="3.81" size="1.524" layer="22" font="vector" rot="SMR180">http://adjacentreality.org</text>
+<text x="8.89" y="6.35" size="1.524" layer="22" font="vector" rot="SMR180">https://github.com/dcoberii/</text>
+<text x="43.815" y="38.4175" size="1.27" layer="22" font="vector" rot="MR270">Creative Commons BY-SA 3.0</text>
 </plain>
 <libraries>
 <library name="adjacent-reality">
@@ -804,6 +853,88 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </package>
 </packages>
 </library>
+<library name="ohw-logo">
+<packages>
+<package name="OSHW_FILLX200_NOTEXT">
+<wire x1="2.4384" y1="1.4224" x2="1.9304" y2="0.2794" width="0.1524" layer="21"/>
+<wire x1="1.9304" y1="0.2794" x2="1.6764" y2="0.4318" width="0.1524" layer="21"/>
+<wire x1="1.6764" y1="0.4318" x2="1.0668" y2="0" width="0.1524" layer="21"/>
+<wire x1="1.0668" y1="0" x2="0.6096" y2="0.4826" width="0.1524" layer="21"/>
+<wire x1="0.6096" y1="0.4826" x2="1.016" y2="1.0922" width="0.1524" layer="21"/>
+<wire x1="0.762" y1="1.778" x2="0" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="0" y1="1.905" x2="0" y2="2.5654" width="0.1524" layer="21"/>
+<wire x1="0" y1="2.5654" x2="0.762" y2="2.7178" width="0.1524" layer="21"/>
+<wire x1="1.0414" y1="3.3528" x2="0.5842" y2="4.0132" width="0.1524" layer="21"/>
+<wire x1="0.5842" y1="4.0132" x2="1.0668" y2="4.4704" width="0.1524" layer="21"/>
+<wire x1="1.0668" y1="4.4704" x2="1.7272" y2="4.0132" width="0.1524" layer="21"/>
+<wire x1="2.3622" y1="4.2672" x2="2.4892" y2="5.08" width="0.1524" layer="21"/>
+<wire x1="2.4892" y1="5.08" x2="3.175" y2="5.08" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="5.08" x2="3.302" y2="4.2672" width="0.1524" layer="21"/>
+<wire x1="3.937" y1="4.0132" x2="4.5974" y2="4.4704" width="0.1524" layer="21"/>
+<wire x1="4.5974" y1="4.4704" x2="5.08" y2="4.0132" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="4.0132" x2="4.6228" y2="3.3528" width="0.1524" layer="21"/>
+<wire x1="4.9022" y1="2.7178" x2="5.6642" y2="2.5654" width="0.1524" layer="21"/>
+<wire x1="5.6642" y1="2.5654" x2="5.6642" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="5.6642" y1="1.905" x2="4.9022" y2="1.778" width="0.1524" layer="21"/>
+<wire x1="4.6482" y1="1.0922" x2="5.08" y2="0.4826" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="0.4826" x2="4.5974" y2="0" width="0.1524" layer="21"/>
+<wire x1="4.5974" y1="0" x2="3.9878" y2="0.4318" width="0.1524" layer="21"/>
+<wire x1="3.9878" y1="0.4318" x2="3.7338" y2="0.2794" width="0.1524" layer="21"/>
+<wire x1="3.7338" y1="0.2794" x2="3.2512" y2="1.4224" width="0.1524" layer="21"/>
+<wire x1="2.4384" y1="1.4478" x2="3.2512" y2="1.4478" width="0.1524" layer="21" curve="-308.267286"/>
+<wire x1="1.0245" y1="1.1004" x2="0.7637" y2="1.774" width="0.1524" layer="21" curve="-19.673848"/>
+<wire x1="0.7779" y1="2.7179" x2="1.0435" y2="3.3392" width="0.1524" layer="21" curve="-18.371859"/>
+<wire x1="1.736" y1="4.0223" x2="2.3432" y2="4.2689" width="0.1524" layer="21" curve="-17.83212"/>
+<wire x1="3.3155" y1="4.2736" x2="3.9464" y2="4.0175" width="0.1524" layer="21" curve="-18.449318"/>
+<wire x1="4.6199" y1="3.3487" x2="4.8997" y2="2.7179" width="0.1524" layer="21" curve="-19.303177"/>
+<wire x1="4.9045" y1="1.7692" x2="4.6484" y2="1.0909" width="0.1524" layer="21" curve="-20.344696"/>
+<polygon width="0.1524" layer="21">
+<vertex x="1.651" y="0.508"/>
+<vertex x="1.143" y="0.127"/>
+<vertex x="0.762" y="0.508"/>
+<vertex x="1.143" y="1.143"/>
+<vertex x="0.889" y="1.778"/>
+<vertex x="0.127" y="2.032"/>
+<vertex x="0.127" y="1.905"/>
+<vertex x="0.127" y="2.54"/>
+<vertex x="0.889" y="2.667"/>
+<vertex x="1.143" y="3.429"/>
+<vertex x="0.635" y="3.937"/>
+<vertex x="1.016" y="4.318"/>
+<vertex x="1.778" y="3.937"/>
+<vertex x="2.54" y="4.318"/>
+<vertex x="2.413" y="4.318"/>
+<vertex x="2.54" y="4.953"/>
+<vertex x="3.175" y="4.953"/>
+<vertex x="3.175" y="4.191"/>
+<vertex x="3.937" y="3.937"/>
+<vertex x="4.572" y="4.318"/>
+<vertex x="4.953" y="4.064"/>
+<vertex x="4.572" y="3.302"/>
+<vertex x="4.826" y="2.667"/>
+<vertex x="5.588" y="2.54"/>
+<vertex x="5.588" y="1.905"/>
+<vertex x="4.826" y="1.905"/>
+<vertex x="4.572" y="1.016"/>
+<vertex x="4.953" y="0.508"/>
+<vertex x="4.572" y="0.127"/>
+<vertex x="4.064" y="0.508"/>
+<vertex x="3.81" y="0.381"/>
+<vertex x="3.302" y="1.397"/>
+<vertex x="3.81" y="1.905"/>
+<vertex x="3.81" y="2.54"/>
+<vertex x="3.429" y="3.175"/>
+<vertex x="2.794" y="3.302"/>
+<vertex x="2.032" y="3.048"/>
+<vertex x="2.159" y="3.048"/>
+<vertex x="1.778" y="2.413"/>
+<vertex x="2.032" y="1.651"/>
+<vertex x="2.286" y="1.397"/>
+<vertex x="1.905" y="0.381"/>
+</polygon>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1069,6 +1200,7 @@ design rules under a new name.</description>
 <element name="U$3" library="SparkFun" package="STAND-OFF-TIGHT" value="" x="46.355" y="46.355"/>
 <element name="U$4" library="SparkFun" package="STAND-OFF-TIGHT" value="" x="46.355" y="3.175"/>
 <element name="JP2" library="SparkFun" package="1X06" value="" x="17.78" y="41.91"/>
+<element name="OSHW" library="ohw-logo" package="OSHW_FILLX200_NOTEXT" value="" x="7.62" y="38.1" rot="MR270"/>
 </elements>
 <signals>
 <signal name="N$3">
