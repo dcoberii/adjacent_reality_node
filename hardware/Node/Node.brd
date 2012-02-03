@@ -8,8 +8,8 @@
 </settings>
 <grid distance="0.05" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -176,6 +176,7 @@
 <text x="8.89" y="6.35" size="1.524" layer="22" font="vector" rot="SMR180">https://github.com/dcoberii/</text>
 <text x="43.815" y="38.4175" size="1.27" layer="22" font="vector" rot="MR270">Creative Commons BY-SA 3.0</text>
 <rectangle x1="23.22285625" y1="31.296428125" x2="31.931428125" y2="35.650715625" layer="22"/>
+<text x="35.56" y="46.99" size="1.778" layer="21" font="vector">43724</text>
 </plain>
 <libraries>
 <library name="adjacent-reality">
