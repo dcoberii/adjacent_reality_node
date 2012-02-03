@@ -8,8 +8,8 @@
 </settings>
 <grid distance="0.05" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -161,20 +161,21 @@
 <text x="7.62" y="27.94" size="2.286" layer="21" font="vector">Adjacent</text>
 <text x="7.62" y="24.765" size="2.286" layer="21" font="vector">Reality</text>
 <text x="7.62" y="21.59" size="2.286" layer="21" font="vector">Node 0.1</text>
-<rectangle x1="10.16" y1="9.525" x2="40.64" y2="17.145" layer="22"/>
-<rectangle x1="10.16" y1="9.525" x2="17.78" y2="40.005" layer="22"/>
-<rectangle x1="33.02" y1="9.525" x2="40.64" y2="40.005" layer="22"/>
-<rectangle x1="10.16" y1="32.385" x2="40.64" y2="40.005" layer="22"/>
-<rectangle x1="17.78" y1="17.145" x2="21.59" y2="32.385" layer="22"/>
-<rectangle x1="21.59" y1="28.575" x2="33.02" y2="32.385" layer="22"/>
-<rectangle x1="21.59" y1="20.955" x2="25.4" y2="28.575" layer="22"/>
-<rectangle x1="25.4" y1="20.955" x2="29.21" y2="24.765" layer="22"/>
-<rectangle x1="29.21" y1="24.765" x2="33.02" y2="28.575" layer="22"/>
+<rectangle x1="10.16" y1="9.525" x2="40.64" y2="13.879284375" layer="22"/>
+<rectangle x1="10.16" y1="9.525" x2="14.514284375" y2="40.005" layer="22"/>
+<rectangle x1="36.285715625" y1="9.525" x2="40.64" y2="40.005" layer="22"/>
+<rectangle x1="10.16" y1="35.650715625" x2="40.64" y2="40.005" layer="22"/>
+<rectangle x1="14.514284375" y1="13.879284375" x2="18.868571875" y2="18.233571875" layer="22"/>
+<rectangle x1="23.22285625" y1="13.879284375" x2="31.931428125" y2="18.233571875" layer="22"/>
+<rectangle x1="18.868571875" y1="18.233571875" x2="23.22285625" y2="31.296428125" layer="22"/>
+<rectangle x1="14.514284375" y1="31.296428125" x2="18.868571875" y2="35.650715625" layer="22"/>
+<rectangle x1="23.22285625" y1="22.58785625" x2="36.285715625" y2="26.94214375" layer="22"/>
 <text x="41.91" y="45.72" size="1.524" layer="22" font="vector" rot="MR0">Adjacent Reality Node 0.1</text>
 <text x="41.91" y="43.18" size="1.524" layer="22" font="vector" rot="MR0">Donald Cober &amp; Nirav Patel</text>
 <text x="8.89" y="3.81" size="1.524" layer="22" font="vector" rot="SMR180">http://adjacentreality.org</text>
 <text x="8.89" y="6.35" size="1.524" layer="22" font="vector" rot="SMR180">https://github.com/dcoberii/</text>
 <text x="43.815" y="38.4175" size="1.27" layer="22" font="vector" rot="MR270">Creative Commons BY-SA 3.0</text>
+<rectangle x1="23.22285625" y1="31.296428125" x2="31.931428125" y2="35.650715625" layer="22"/>
 </plain>
 <libraries>
 <library name="adjacent-reality">
@@ -2477,21 +2478,6 @@ design rules under a new name.</description>
 <wire x1="25.465" y1="23.1125" x2="25.465" y2="23.865" width="0.254" layer="1"/>
 </signal>
 </signals>
-<errors>
-<approved hash="19,1,f70d459c77aeb933"/>
-<approved hash="19,1,638f801ab3a37391"/>
-<approved hash="19,1,df5a7b207c5dd827"/>
-<approved hash="19,1,dc1a78607f2edb54"/>
-<approved hash="19,1,33cbb522a740ddd3"/>
-<approved hash="19,1,9f5e5524525b9821"/>
-<approved hash="19,1,9c1e566451289b52"/>
-<approved hash="19,1,32fcf4d2752149f8"/>
-<approved hash="19,1,c2c70119725afce3"/>
-<approved hash="19,1,d1f98948b9653f2d"/>
-<approved hash="19,1,9c1ce466e4239c59"/>
-<approved hash="19,1,44dc4255aaaebfdd"/>
-<approved hash="19,1,5effd658ac2aea75"/>
-</errors>
 </board>
 </drawing>
 </eagle>
