@@ -2,8 +2,7 @@ F_CPU = 8000000
 MCU = atmega32u4
 
 TARGET = fusion_raw
-SRC =	$(TARGET).c \
-		usb_core.c \
+SRC =	usb_core.c \
 		usb_serial.c \
 		twi.c \
 		l3g4200d.c \
@@ -22,12 +21,13 @@ all: $(TARGET).hex
 
 %.hex: %.elf
 	avr-objcopy -O ihex -R .fuse -R .lock -R .eeprom -R .signature $< $@
-%.elf: $(OBJ)
+%.elf: $(OBJ) %.o	
 	$(CC) $(CFLAGS) $(CDEFS) $^ -o $@
 %.o : %.c
 	$(CC) $(CFLAGS) $(CDEFS) -c $< -o $@ 
 %.d : %.c %.o
-	$(CC) $(CFLAGS) $(CDEFS) -MM -MG $< > $@ 
+	$(CC) $(CFLAGS) $(CDEFS) -MM -MG $< > $@
+	 
 -include $(DEP)
 
 .PHONY: install
@@ -37,4 +37,4 @@ install: $(TARGET).hex
 
 .PHONY: clean
 clean:
-	rm -f $(OBJ) $(DEP) $(TARGET).hex
+	-rm -f *.d *.o *.hex
