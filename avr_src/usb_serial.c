@@ -115,25 +115,28 @@ const string_descriptor_t PROGMEM string_descriptor[3] ={{
 }};
 */
 // I wrote this, but now I am not sure what it does
-void send_data_p(uint8_t *data, uint16_t length){
+uint16_t send_data_p(uint8_t *data, uint16_t length){
 
-	while(length>0){
+	uint16_t l = length;
+
+	while(l!=0){
 		while (!(UEINTX & ((1<<TXINI)|(1<<RXOUTI))));	
-		while((length>0) && (UEBCX<32)){
+		while((l!=0) && (UEBCX<32)){
 			UEDATX = pgm_read_byte(data++);
-			length--;
+			l--;
 		}
-		if((length>0)){
+		if((l!=0)){
 			UEINTX = ~(1<<TXINI);
 		}
 	}
-	
+
+	return length;
 	
 }
 
 uint16_t MIN(uint16_t a, uint16_t b){ if (a>b){return b;}else{return a;}}
 
-//Something to test: descriptor length > wLength = EP_size
+//Something to test: descriptor length > wLength = EP_size, will it double terminate?
 uint8_t get_descriptor(uint16_t wValue, uint16_t wIndex, uint16_t wLength){
 	
 	switch(wValue>>8){
@@ -152,48 +155,31 @@ uint8_t get_descriptor(uint16_t wValue, uint16_t wIndex, uint16_t wLength){
 			wLength = MIN(wLength, pgm_read_word(&config_descriptor[0].wTotalLength));
 			
 			//Send data from descriptor
-			send_data_p( (uint8_t *)&config_descriptor[0], MIN(wLength, pgm_read_byte(&config_descriptor[0].bLength)));
-			//Adjust length
-			wLength -=pgm_read_byte(&config_descriptor[0].bLength);
-			
+			wLength -= send_data_p( (uint8_t *)&config_descriptor[0], MIN(wLength, pgm_read_byte(&config_descriptor[0].bLength)));
 			
 			//Send data from descriptor
-			send_data_p( (uint8_t *)&interface_descriptor[0], MIN(wLength, pgm_read_byte(&interface_descriptor[0].bLength)));
-			//Adjust length
-			wLength -=pgm_read_byte(&interface_descriptor[0].bLength);
+			wLength -= send_data_p( (uint8_t *)&interface_descriptor[0], MIN(wLength, pgm_read_byte(&interface_descriptor[0].bLength)));
 						
 			//Send data from descriptor
-			send_data_p( (uint8_t *)&cdc_function_descriptor[0], MIN(wLength, pgm_read_byte(&cdc_function_descriptor[0].bLength)));
-			//Adjust length
-			wLength -=pgm_read_byte(&cdc_function_descriptor[0].bLength);
+			wLength -= send_data_p( (uint8_t *)&cdc_function_descriptor[0], MIN(wLength, pgm_read_byte(&cdc_function_descriptor[0].bLength)));
 			
 			//Send data from descriptor
-			send_data_p( (uint8_t *)&cdc_function_descriptor[1], MIN(wLength, pgm_read_byte(&cdc_function_descriptor[1].bLength)));
-			//Adjust length
-			wLength -=pgm_read_byte(&cdc_function_descriptor[1].bLength);
+			wLength -= send_data_p( (uint8_t *)&cdc_function_descriptor[1], MIN(wLength, pgm_read_byte(&cdc_function_descriptor[1].bLength)));
 						
 			//Send data from descriptor
-			send_data_p( (uint8_t *)&cdc_function_descriptor[2], MIN(wLength, pgm_read_byte(&cdc_function_descriptor[2].bLength)));
-			//Adjust length
-			wLength -=pgm_read_byte(&cdc_function_descriptor[2].bLength);
+			wLength -= send_data_p( (uint8_t *)&cdc_function_descriptor[2], MIN(wLength, pgm_read_byte(&cdc_function_descriptor[2].bLength)));
 			
 			//Send data from descriptor
-			send_data_p( (uint8_t *)&endpoint_descriptor[0], MIN(wLength, pgm_read_byte(&endpoint_descriptor[0].bLength)));
-			//Adjust length
-			wLength -=pgm_read_byte(&endpoint_descriptor[0].bLength);			
+			wLength -= send_data_p( (uint8_t *)&endpoint_descriptor[0], MIN(wLength, pgm_read_byte(&endpoint_descriptor[0].bLength)));
 			
 			//Send data from descriptor
-			send_data_p( (uint8_t *)&interface_descriptor[1], MIN(wLength, pgm_read_byte(&interface_descriptor[1].bLength)));
-			//Adjust length
-			wLength -=pgm_read_byte(&interface_descriptor[1].bLength);
+			wLength -= send_data_p( (uint8_t *)&interface_descriptor[1], MIN(wLength, pgm_read_byte(&interface_descriptor[1].bLength)));
 			
 			//Send data from descriptor
-			send_data_p( (uint8_t *)&endpoint_descriptor[1], MIN(wLength, pgm_read_byte(&endpoint_descriptor[1].bLength)));
-			//Adjust length
-			wLength -=pgm_read_byte(&endpoint_descriptor[1].bLength);
+			wLength -= send_data_p( (uint8_t *)&endpoint_descriptor[1], MIN(wLength, pgm_read_byte(&endpoint_descriptor[1].bLength)));
 
 			//Send data from descriptor
-			send_data_p( (uint8_t *)&endpoint_descriptor[2], MIN(wLength, pgm_read_byte(&endpoint_descriptor[2].bLength)));
+			wLength -= send_data_p( (uint8_t *)&endpoint_descriptor[2], MIN(wLength, pgm_read_byte(&endpoint_descriptor[2].bLength)));
 						
 			//terminate transaction
 			UEINTX = ~(1<<TXINI);
@@ -239,7 +225,7 @@ uint8_t set_configuration(uint16_t wValue){
 		UENUM = 3;										//Select endpoint 3
 		UECONX = (1<<EPEN);	 							//Enable
 		UECFG0X = (1<EPTYPE1)|(0<<EPDIR);				//Configure as type BULK direction OUT
-		UECFG1X = (1<<EPSIZE1)|(1<<ALLOC); 				//Buffer is 32 bytes, allocated as single
+		UECFG1X = (1<<EPSIZE1)|(1<<ALLOC)|(1<<EPBK0);	//Buffer is 32 bytes, allocated as double
 
 		UERST = (1<<EPRST1)|(1<<EPRST2)|(1<<EPRST3);	//Reset the FIFO
 		UERST = 0;
@@ -275,16 +261,15 @@ void usb_serial_init(void){
 uint8_t usb_serial_ready(){return get_usb_configuration();}
 
 void usb_serial_tx(const uint8_t data[], uint8_t length){
-	
+
 		cli();
 		UENUM = 3;
 
 		for(;length>0;length--){
-			UEDATX = *(data++);
+				UEDATX = *(data++);
 		}
-		UEINTX = ~(1<<TXINI);
+		UEINTX &=  0x7E;//~(1<<TXINI);
 		sei();
-	
 }
 
 //rx_byte_callback
